@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+/* SCSS RGB */
+/*$emerald-2: rgba(71, 192, 133, 1); */
+
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-bg: rgba(38, 42, 49);
+  --color-bg-dark: rgb(28, 33, 40);
+  --color-accent: rgba(42, 190, 120);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +20,4 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
