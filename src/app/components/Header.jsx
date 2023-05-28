@@ -5,25 +5,27 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <div className='header-layout'>
-      <Link href='./'>
-        HOME
-      </Link>
+      <nav className='navbar'>
+        <Link href='./'>
+          HOME
+        </Link>
 
-      <Link href='./'>
-        ABOUT
-      </Link>
+        <Link href='./about'>
+          ABOUT
+        </Link>
 
-      <Link href='./'>
-        PROJECTS
-      </Link>
+        <Link href='./projects'>
+          PROJECTS
+        </Link>
 
-      <Link href='./'>
-        CONTACT
-      </Link>
+        <Link href='./contact'>
+          CONTACT
+        </Link>
 
-      <Link href='./'>
-        GITHUB
-      </Link>
+        <Link href='https://github.com/werthird' target='_blank'>
+          GITHUB
+        </Link>
+      </nav>
     </div>
   );
 };
