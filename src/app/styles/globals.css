@@ -6,8 +6,10 @@
 :root {
   --color-bg: rgba(38, 42, 49);
   --color-bg-dark: rgb(28, 33, 40);
+  --color-dark: black;
   --color-accent: rgba(42, 190, 120, 0.8);
   --color-accent-glow: rgba(42, 190, 120, 1);
+  --color-accent-light: rgb(60, 243, 157);
   --color-font: rgba(255, 255, 255, 0.8);
   --color-font-glow: rgba(255, 255, 255, 1);
 }
@@ -28,6 +30,8 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  background-color: var(--color-dark);
+  color: var(--color-font-glow);
 }
 
 .wrapper {

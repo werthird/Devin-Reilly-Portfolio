@@ -1,43 +1,63 @@
 /* HomePage Styles */
 
 .main-div {
-  text-align: center;
-  margin: auto;
+  padding: 50px 100px;
+  /* border: solid red 2px; */
 }
-.main-div h1 {
-    font-size: 50px;
+  .main-h1 {
+    font-size: 120px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    color: var(--color-font);
     margin-bottom: 5px;
   }
-  .main-div h2 {
-    font-size: 30px;
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    border-left: solid 1px white;
+    padding-left: 20px;
   }
-  .main-div button {
+  .main-content p {
+    font-size: 18px;
+    font-weight: 200;
+  }
+    .text-emph {
+      color: var(--color-accent-glow);
+      font-weight: 400;
+    }
+  .main-content link {
+    margin: 50px;
+  }
+  .main-content button {
+    align-self: flex-start;
     font-size: 20px;
     border: 1px solid white;
-    margin-top: 15px;
+    margin-top: 50px;
     padding: 10px 15px;
     color: var(--color-font);
+    transition: 0.5s ease-in-out;
   }
-  .main-div button:hover {
+  .main-content button:hover {
     cursor: pointer;
     background-color: var(--color-accent);
     border-color: var(--color-accent);
-    transition: 0.5s ease-in-out;
     animation: pulse 2s infinite ease-in-out;
+    animation-delay: 0.5s;
   }
 
   @keyframes pulse {
     0% {
-      color: var(--color-font-glow);
-      box-shadow: 0 5px 30px var(--color-accent);
+      color: var(--color-font);
+      box-shadow: 0 0 0 var(--color-accent);
     }
     50% {
-      color: var(--color-font);
-      box-shadow: 0 2px 5px var(--color-accent);
+      color: var(--color-font-glow);
+      box-shadow: 0 10px 30px var(--color-accent);
     }
     100% {
-      color: var(--color-font-glow);
-      box-shadow: 0 5px 30px var(--color-accent);
+      color: var(--color-font);
+      box-shadow: 0 0 0 var(--color-accent);
     }
   }
   

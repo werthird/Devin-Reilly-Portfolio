@@ -6,18 +6,27 @@
 // IMPORTS
 import './aboutStyle.css';
 import Image from 'next/image';
-import lightbulbPic from '../../../public/images/light-bulb-icon.png';
+import lightbulbPic from '../../../public/images/light-bulb-icon-green.png';
 
 
 
 export default function Home() {
   return (
     <div className='about-div'>
-      <h1 className='slide-in-left'>About</h1>
+      <h1 className='slide-in-left'>About Me</h1>
       <div className='underline-div slide-in-right'></div>
+
+      <div className='profile'>
+        <div className='profile-img flip-in-y'></div>
+        <div className='profile-content'>
+          <p>Hello There! I am glad you have made it to my portfolio page. Please have a look around, checkout some projects, drop me a line. Whether your here to see what skill-set I have, or to gather some insperation, I'm glad your here.</p>
+          <br />
+          <p>Below are some key focus points that guide all my development decisions and a list of my top skill-set. If you have wish to get in contact with me or have any question, you can find my contact information below.</p>
+        </div>
+      </div>
+
+
       <h2>Focus Points</h2>
-
-
       <div className='key-focus-div'>
         <div className='focus-div'>
           <div className='image-wrapper flip-in-y image-1'>
@@ -49,100 +58,59 @@ export default function Home() {
         </div>
       </div>
 
-
-      <div className='profile-div'>
-        <div className='profile'>
-          <div className='profile-img'></div>
-          <h2 className='profile-title'>Hello there! 
-            <br />
-            My name is, Devin Reilly!</h2>
-          <p className='profile-content'>I'm a Front-End Developer, living in the sunniest state of Florida. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
-        </div>
-        <div className='skills-div'>
-          <h2>Key Skills</h2>
-          <div className='skills-list'>
+      <div className='skills-div'>
+        <h2>Key Skill Set</h2>
+        <div className='skills-list'>
+          <div className='skill-bar'>
             <p>CSS</p>
-            <div className='skill-bar'>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-            </div>
-            <p>HTML</p>
-            <div className='skill-bar'>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-            </div>
-            <p>JavaScript</p>
-            <div className='skill-bar'>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit light-fill'></span>
-            </div>
-            <p>React</p>
-            <div className='skill-bar'>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit light-fill'></span>
-              <span className='skill-bar-unit light-fill'></span>
-            </div>
-            <p>Next.js</p>
-            <div className='skill-bar'>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit light-fill'></span>
-              <span className='skill-bar-unit light-fill'></span>
-            </div>
-            <p>MySQL</p>
-            <div className='skill-bar'>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit light-fill'></span>
-            </div>
-            <p>MongoBD</p>
-            <div className='skill-bar'>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit light-fill'></span>
-            </div>
-            <p>Node.js</p>
-            <div className='skill-bar'>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit light-fill'></span>
-              <span className='skill-bar-unit light-fill'></span>
-            </div>
-            <p>UI Design</p>
-            <div className='skill-bar'>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
-              <span className='skill-bar-unit dark-fill'></span>
+            <div className='skill-bar-level'>
+              <div className='width-90'></div>
+              <p>90%</p>
             </div>
           </div>
+          <div className='skill-bar'>
+            <p>HTML</p>
+            <div className='skill-bar-level'>
+              <div className='width-90'></div>
+              <p>90%</p>
+            </div>
+          </div>
+          <div className='skill-bar'>
+            <p>JavaScript</p>
+            <div className='skill-bar-level'>
+              <div className='width-80'></div>
+              <p>80%</p>
+            </div>
+          </div>
+          <div className='skill-bar'>
+            <p>Node.Js</p>
+            <div className='skill-bar-level'>
+              <div className='width-80'></div>
+              <p>80%</p>
+            </div>
+          </div>
+          <div className='skill-bar'>
+            <p>React</p>
+            <div className='skill-bar-level'>
+              <div className='width-60'></div>
+              <p>60%</p>
+            </div>
+          </div>
+          <div className='skill-bar'>
+            <p>MongoBD</p>
+            <div className='skill-bar-level'>
+              <div className='width-80'></div>
+              <p>80%</p>
+            </div>
+          </div>
+          <div className='skill-bar'>
+            <p>UI Design</p>
+            <div className='skill-bar-level'>
+              <div className='width-90'></div>
+              <p>90%</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
