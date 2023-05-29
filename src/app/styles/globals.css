@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-color: var(--color-dark);
   color: var(--color-font-glow);
 }
