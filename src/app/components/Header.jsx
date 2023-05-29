@@ -1,14 +1,13 @@
 import './style.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import logoPic from '../../../public/images/logo-screenshot.jpg';
 
 
 export default function Header() {
   return (
     <div className='header-layout'>
       <div className='fade-in header-image-wrapper'>
-       <Image src={logoPic} width='200' alt='Devin Reilly logo' className='logo-image'/>
+       <Image src='/images/logo-removebg.png' width='200' height='200' alt='Devin Reilly logo' className='logo-image'/>
       </div>
       <nav className='navbar'>
         <Link href='./'>

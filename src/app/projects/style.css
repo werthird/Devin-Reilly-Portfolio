@@ -2,7 +2,7 @@
 /                 PROJECT PAGE STYLES
 /  ===================================================== */
 
-
+/* WHOLE PROJECT PAGE */
 .project-div {
   display: flex;
   flex-direction: column;
@@ -25,82 +25,175 @@
   }
 
 
-.featured-project {
+/* ======================================================= */
+/* FEATURED PROJECTS */
+.featured-projects-div {
   display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
-  width: 70%;
-  min-height: 300px;
-  /* border:solid red 2px; */
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 150px;
 }
-  .featured-image {
+  .featured-project {
     display: flex;
-    width: 55%;
-    border-radius: 7px;
-    background-color: var(--color-accent-glow);
-    box-shadow: 0 10px 30px var(--color-accent);
-    /* border:solid red 2px; */ 
-  }
-    .featured-image * {
-      margin: auto;
-    }
-    
-  .featured-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40%;
+    justify-content: space-between;
+    margin-top: 100px;
+    width: 70%;
+    min-height: 300px;
     /* border:solid red 2px; */
   }
-    .featured-content-label {
-      color: var(--color-accent-glow)
-    }
-    .featured-content-title {
-      margin: 5px 0 30px 0;
-      font-size: 30px;
-      font-weight: 500;
-    }
-    .featured-content-desc {
-      z-index: 1;
+    .featured-image {
       display: flex;
-      height: 150px;
-      width: 130%;
-      padding: 20px;
-      text-align: right;
+      width: 55%;
       border-radius: 7px;
-      background-color: rgb(46, 46, 46);
+      background-color: var(--color-accent-glow);
+      box-shadow: 0 10px 30px var(--color-accent);
+      /* border:solid red 2px; */ 
+    }
+      .featured-image * {
+        margin: auto;
+      }
+    .featured-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
       /* border:solid red 2px; */
     }
-    .featured-content-tech {
-      display: flex;
-      justify-content: space-between;
-      width: 80%;
-      margin: 20px 0 20px 0;
-      font-family: monospace;
-    }
-    .featured-content-link {
-      display: flex;
-      justify-content: space-between;
-      width: 20%;
-    }
-      .github-icon,
-      .deployed-site-icon {
-        height: 30px;
-        width: 30px;
+      .featured-content-label {
+        color: var(--color-accent-glow)
+      }
+      .featured-content-title {
+        margin: 5px 0 30px 0;
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .featured-content-desc {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        width: 130%;
+        padding: 20px;
+        border-radius: 7px;
+        background-color: rgb(46, 46, 46);
+        /* border:solid red 2px; */
+      }
+      .featured-content-specs {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 20px 0 20px 0;
+        font-size: 16px;
+        font-family: monospace;
+      }
+      .featured-content-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 100px;
+        /* border: solid red 2px; */
+      }
+        .github-icon,
+        .deployed-site-icon {
+          height: 30px;
+          width: 30px;
+        }
+        .github-icon:hover,
+        .deployed-site-icon:hover {
+          height: 40px;
+          width: 40px;
+          transition: 0.3s ease-in-out;
+        }
+      .flex-end-content {
+        justify-content: flex-end;
+      }
+      .flex-end-items {
+        align-items: flex-end;
+      }
+      .text-align-right {
+        text-align: right;
       }
 
 
-    .flex-end-content {
-      justify-content: flex-end;
+/* ======================================================= */
+/* PROJECT LIST */
+.project-list-title {
+  font-size: 40px;
+}
+.projects-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+  height: fit-content;
+  margin-top: 40px;
+  color: rgb(0, 0, 0);
+  /* border: solid red 2px; */
+}
+  .project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    min-width: 300px;
+    max-width: 32%;
+    margin: 15px 0;
+    padding: 30px 20px;
+    background-color: var(--color-accent-glow);
+    box-shadow: 0 10px 30px var(--color-accent);
+    border-radius: 8px;
+    transition: 1s ease-in-out;
+  }
+    .project-card:hover {
+      top: -10px;
     }
-    .flex-end-items {
-      align-items: flex-end;
-    }
+      .card-icon-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+        .card-file-icon {
+          width: 60px;
+          height: 60px;
+        }
+        .card-icon-wrapper span {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+          width: 30%;
+        }
+          .card-deployed-site-icon,
+          .card-github-icon {
+            width: 25px;
+            height: 25px;
+          }
+          .card-deployed-site-icon:hover,
+          .card-github-icon:hover {
+            width: 30px;
+            height: 30px;
+            transition: 0.3s ease-in-out;
+          }
+      .project-card h3 {
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .card-desc {
+        font-size: 18px;
+      }
+      .card-specs-list {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-family: monospace;
+        color: rgba(0, 0, 0, 0.8);
+      }
+
 
  
-
-
-
 
 
 
