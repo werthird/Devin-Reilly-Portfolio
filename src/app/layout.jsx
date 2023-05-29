@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} id='styled-scrollbars'>
         <Header />
         <main>
           {children}

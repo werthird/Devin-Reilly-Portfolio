@@ -33,6 +33,7 @@
     align-self: flex-start;
     font-size: 20px;
     border: 1px solid white;
+    border-radius: 3px;
     margin-top: 50px;
     padding: 10px 15px;
     color: var(--color-font);
@@ -43,7 +44,6 @@
     background-color: var(--color-accent);
     border-color: var(--color-accent);
     animation: pulse 2s infinite ease-in-out;
-    animation-delay: 0.5s;
   }
 
   @keyframes pulse {
@@ -53,7 +53,7 @@
     }
     50% {
       color: var(--color-font-glow);
-      box-shadow: 0 10px 30px var(--color-accent);
+      box-shadow: 0 15px 35px var(--color-accent);
     }
     100% {
       color: var(--color-font);
