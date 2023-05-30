@@ -13,23 +13,21 @@ export default function Home() {
       <div className='underline-div slide-in-right'></div>
 
       <div className='contact-form-div card-flip-in-y'>
-        <h2>Questions?</h2>
-        <div className='contact-form-underline-div'></div>
         <form className='contact-form'>
           <div className='form-div name'>
-            <label for='name'></label>
+            <label htmlFor='name'></label>
             <input type='text' name='name' id='name' autoComplete='given-name' placeholder='Name *' required />
           </div>
           <div className='form-div email'>
-            <label for='email'></label>
+            <label htmlFor='email'></label>
             <input type='email' name='email' id='email' autoComplete='email' placeholder='Enter Email *' required />
           </div>
           <div className='form-div phone'>
-            <label for='phone'></label>
+            <label htmlFor='phone'></label>
             <input type='text' name='phone' id='phone' autoComplete='tel' placeholder='Enter Phone' />
           </div>
           <div className='form-div message'>
-            <label for='message'></label>
+            <label htmlFor='message'></label>
             <textarea name='message' id='message' rows='6' placeholder='Your Message *' required></textarea>
           </div>
           <div className='submit-button'>

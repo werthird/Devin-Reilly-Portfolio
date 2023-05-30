@@ -37,25 +37,13 @@
     color: rgb(0, 0, 0);
     opacity: 0;
   }
-    .contact-form-div h2 {
-      margin-top: 20px;
-      font-size: 30px;
-      font-weight: 800;
-    }
-    .contact-form-underline-div {
-      width: 80px;
-      border-top: 3px solid black;
-      border-radius: 5px;
-    }
     .contact-form {
-      padding: 30px;
+      padding: 2px 30px 30px 30px;
       width: 100%;
-      /* border: solid red 2px; */
     }
       .form-div {
         width: 100%;
         margin: 30px 0;
-        /* border: red solid 2px; */
       }
         input {
           width: 100%;
@@ -151,18 +139,21 @@
 
 @keyframes buttonPulse {
   0% {
-    box-shadow: 0 0 0 black;
+    text-shadow: 0 0 0 var(--color-accent-glow);
+    box-shadow: 0 0 5px black;
   }
   50% {
-    box-shadow: 0 5px 20px black;
+    text-shadow: 0 0 5px var(--color-accent-glow);
+    box-shadow: 0 1px 25px black;
   }
   100% {
-    box-shadow: 0 0 0 black;
+    text-shadow: 0 0 0 var(--color-accent-glow);
+    box-shadow: 0 0 5px black;
   }
 }
 
 .card-flip-in-y {
-  animation: 2.5s ease-in-out flipInY forwards;
+  animation: 3s ease-in-out flipInY forwards;
   animation-delay: 0.3s;
 }
   @keyframes flipInY {
@@ -174,7 +165,7 @@
        transform: perspective(400px) rotateY(-10deg);
     }
     70% {
-       transform: perspective(400px) rotateY(10deg);
+       transform: perspective(400px) rotateY(5deg);
     }
     100% {
        transform: perspective(400px) rotateY(0deg);

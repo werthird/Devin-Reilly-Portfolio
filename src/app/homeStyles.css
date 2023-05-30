@@ -29,7 +29,7 @@
   .main-content link {
     margin: 50px;
   }
-  .main-content button {
+  .main-button {
     align-self: flex-start;
     font-size: 20px;
     border: 1px solid white;
@@ -39,7 +39,7 @@
     color: var(--color-font);
     transition: 0.5s ease-in-out;
   }
-  .main-content button:hover {
+  .main-button:hover {
     cursor: pointer;
     background-color: var(--color-accent);
     border-color: var(--color-accent);
@@ -49,14 +49,17 @@
   @keyframes pulse {
     0% {
       color: var(--color-font);
+      text-shadow: 0 0 0px white;
       box-shadow: 0 0 0 var(--color-accent);
     }
     50% {
       color: var(--color-font-glow);
-      box-shadow: 0 15px 35px var(--color-accent);
+      text-shadow: 0 0 5px white;
+      box-shadow: 0 5px 35px var(--color-accent);
     }
     100% {
       color: var(--color-font);
+      text-shadow: 0 0 0px white;
       box-shadow: 0 0 0 var(--color-accent);
     }
   }

@@ -20,33 +20,33 @@ export default function Home() {
       
       <div className='featured-projects-div'>
         <div className='featured-project'>
-          <div className='featured-image'><Image src='/images/404-gif.gif' width={575} height={0} alt='404 image' /></div>
+          <div className='featured-image'><Image src='/images/aardvarchive2.png' width={575} height={0} alt='404 image' /></div>
           <div className='featured-content flex-end-items'>
             <p className='featured-content-label'>Featured Project</p>
-            <h3 className='featured-content-title'>Aardvarchive</h3>
-            <div className='featured-content-desc flex-end-content text-align-right'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ab natus rem inventore necessitatibus et, saepe quae exercitationem similique accusantium modi odit ullam, ipsa, id impedit quam libero est fugit!</p></div>
-            <p className='featured-content-specs'><span>Tech</span><span>Tech</span><span>Tech</span><span>Tech</span><span>Tech</span></p>
-            <p className='featured-content-link'><Link href='./'><BsGithub className='github-icon' /></Link><Link href='./'><BsFillArrowUpRightSquareFill className='deployed-site-icon' /></Link></p>
+            <h3 className='featured-content-title'>AardvArchive</h3>
+            <div className='featured-content-desc flex-end-content text-align-right'><p>A web app that allows a user to create an account and save any code snippets that they want. It allows users to view others code snippets and leave comments. A very useful web app for any beginning web developer.</p></div>
+            <p className='featured-content-specs'><span>JavaScript</span><span>Bootstrap</span><span>CSS</span><span>MySQL</span><span>Express</span></p>
+            <p className='featured-content-link'><Link href='https://github.com/werthird/AardvArchive' target="_blank" ><BsGithub className='github-icon' /></Link><Link href='https://ancient-fortress-32796.herokuapp.com/' target="_blank" ><BsFillArrowUpRightSquareFill className='deployed-site-icon' /></Link></p>
           </div>
         </div>
         <div className='featured-project'>
           <div className='featured-content'>
             <p className='featured-content-label'>Featured Project</p>
             <h3 className='featured-content-title'>Tech Blog</h3>
-            <div className='featured-content-desc'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id exercitationem dignissimos magnam nulla laudantium. Deleniti temporibus, incidunt accusamus aliquid dicta, quibusdam eaque debitis numquam illo commodi quae praesentium ratione reiciendis!</p></div>
-            <p className='featured-content-specs'><span>Tech</span><span>Tech</span><span>Tech</span><span>Tech</span><span>Tech</span></p>
-            <p className='featured-content-link'><Link href='./'><BsGithub className='github-icon' /></Link><Link href='./'><BsFillArrowUpRightSquareFill className='deployed-site-icon' /></Link></p>
+            <div className='featured-content-desc'><p>A blog platform similar to blogger. Allows a user to create an account, publish blog posts, and leave comments on other users post. If you just want to keep track of notes or start your publishing journey, this is the site for you.</p></div>
+            <p className='featured-content-specs'><span>JavaScript</span><span>CSS</span><span>Express</span><span>MySQL</span><span>Sequelize</span></p>
+            <p className='featured-content-link'><Link href='https://github.com/werthird/Tech-Blog-Model-14' target="_blank"><BsGithub className='github-icon' /></Link><Link href='https://tech-blog-devin.herokuapp.com/' target="_blank"><BsFillArrowUpRightSquareFill className='deployed-site-icon' /></Link></p>
           </div>
-          <div className='featured-image'><Image src='/images/404-gif.gif' width={575} height={0} alt='404 image' /></div>
+          <div className='featured-image'><Image src='/images/tech-blog.png' width={575} height={0} alt='404 image' /></div>
         </div>
         <div className='featured-project'>
-          <div className='featured-image'><Image src='/images/404-gif.gif' width={575} height={0} alt='404 image' /></div>
+          <div className='featured-image'><Image src='/images/weather-app.jpg' width={575} height={0} alt='404 image' /></div>
           <div className='featured-content flex-end-items'>
             <p className='featured-content-label'>Featured Project</p>
-            <h3 className='featured-content-title'>Project Name</h3>
-            <div className='featured-content-desc flex-end-content text-align-right'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptatem quos labore ex quo vel sunt fugiat veniam. Exercitationem optio nulla fugit sunt corrupti obcaecati, quo hic voluptatum ab nostrum?</p></div>
-            <p className='featured-content-specs'><span>Tech</span><span>Tech</span><span>Tech</span><span>Tech</span><span>Tech</span></p>
-            <p className='featured-content-link'><Link href='./'><BsGithub className='github-icon' /></Link><Link href='./'><BsFillArrowUpRightSquareFill className='deployed-site-icon' /></Link></p>
+            <h3 className='featured-content-title'>Weather Web-App</h3>
+            <div className='featured-content-desc flex-end-content text-align-right'><p>A simple web app to play around with an API. It allows the user to enter their desired city and get a five day forcast.</p></div>
+            <p className='featured-content-specs'><span>JavaScript</span><span>CSS</span><span>HTML</span></p>
+            <p className='featured-content-link'><Link href='https://github.com/werthird/Weather-Dashboard---Module-06' target="_blank"><BsGithub className='github-icon' /></Link><Link href='https://werthird.github.io/Weather-Dashboard---Module-06/' target="_blank"><BsFillArrowUpRightSquareFill className='deployed-site-icon' /></Link></p>
           </div>
         </div>
       </div>
