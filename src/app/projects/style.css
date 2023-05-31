@@ -48,17 +48,17 @@
       border-radius: 7px;
       background-color: var(--color-accent-glow);
       box-shadow: 0 10px 30px var(--color-accent);
-      /* border:solid red 2px; */ 
     }
       .featured-image * {
         margin: auto;
+        border-radius:7px;
+        box-shadow: 0 2px 30px black;
       }
     .featured-content {
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 40%;
-      /* border:solid red 2px; */
     }
       .featured-content-label {
         color: var(--color-accent-glow)
@@ -190,6 +190,11 @@
         font-size: 16px;
         font-family: monospace;
         color: rgba(0, 0, 0, 0.8);
+      }
+
+      .coming-soon-image {
+        border-radius: 5px;
+        box-shadow: 0 2px 30px black;
       }
 
 

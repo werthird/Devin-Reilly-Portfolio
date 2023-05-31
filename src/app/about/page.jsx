@@ -10,14 +10,14 @@ import lightbulbPic from '../../../public/images/light-bulb-icon-green.png';
 
 
 
-export default function Home() {
+export default function About() {
   return (
     <div className='about-div'>
       <h1 className='slide-in-left'>About Me</h1>
       <div className='underline-div slide-in-right'></div>
 
       <div className='profile'>
-        <div className='profile-img flip-in-y'></div>
+        <div className='profile-img flip-in-y'><Image src='/images/profile-image.jpg' width={300} height={500} alt='Profile image'/></div>
         <div className='profile-content'>
           <p>Hello There! I am glad you have made it to my portfolio page. Please have a look around, checkout some projects, drop me a line. Whether your here to see what skill-set I have, or to gather some insperation, I'm glad your here.</p>
           <br />

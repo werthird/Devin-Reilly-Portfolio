@@ -10,7 +10,7 @@ import { BsFillArrowUpRightSquareFill } from 'react-icons/bs';
 import { ImFileEmpty } from 'react-icons/im';
 
 
-export default function Home() {
+export default function Projects() {
   return (
     <div className='project-div'>
 
@@ -54,24 +54,50 @@ export default function Home() {
       <h2 className='project-list-title'>Other Noteworthy Projects</h2>
       <div className='underline-div'></div>
       <div className='projects-list'>
+
         <div className='project-card'>
           <div className='card-icon-wrapper'>
             <ImFileEmpty className='card-file-icon'/>
             <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
           </div>
-          <h3>Project Title</h3>
-          <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
+          <h3>Project Title 1</h3>
+          <Image src='/images/ComingSoon.gif' width={575} height={300} alt='404 image' className='coming-soon-image' />
+          {/* <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p> */}
           <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
         </div>
+
         <div className='project-card'>
           <div className='card-icon-wrapper'>
             <ImFileEmpty className='card-file-icon'/>
             <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
           </div>
           <h3>Project Title 2</h3>
+          <Image src='/images/404-gif.gif' width={575} height={50} alt='404 image' className='coming-soon-image' />
+          {/* <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p> */}
+          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
+        </div>
+
+        <div className='project-card'>
+          <div className='card-icon-wrapper'>
+            <ImFileEmpty className='card-file-icon'/>
+            <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
+          </div>
+          <h3>Project Title 3</h3>
+          <Image src='/images/loading.gif' width={575} height={50} alt='404 image' className='coming-soon-image' />
+          {/* <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p> */}
+          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
+        </div>
+
+        {/* <div className='project-card'>
+          <div className='card-icon-wrapper'>
+            <ImFileEmpty className='card-file-icon'/>
+            <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
+          </div>
+          <h3>Project Title</h3>
           <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
           <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
         </div>
+
         <div className='project-card'>
           <div className='card-icon-wrapper'>
             <ImFileEmpty className='card-file-icon'/>
@@ -81,6 +107,7 @@ export default function Home() {
           <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
           <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
         </div>
+
         <div className='project-card'>
           <div className='card-icon-wrapper'>
             <ImFileEmpty className='card-file-icon'/>
@@ -89,25 +116,8 @@ export default function Home() {
           <h3>Project Title</h3>
           <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
           <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
-        </div>
-        <div className='project-card'>
-          <div className='card-icon-wrapper'>
-            <ImFileEmpty className='card-file-icon'/>
-            <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
-          </div>
-          <h3>Project Title</h3>
-          <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
-          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
-        </div>
-        <div className='project-card'>
-          <div className='card-icon-wrapper'>
-            <ImFileEmpty className='card-file-icon'/>
-            <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
-          </div>
-          <h3>Project Title</h3>
-          <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
-          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
-        </div>
+        </div> */}
+
       </div>
     </div>
   );

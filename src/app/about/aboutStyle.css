@@ -35,10 +35,15 @@
   margin: 100px 0 50px 0;
 }
   .profile-img {
-    border: solid white 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--color-accent-light) 5px;
+    border-radius: 7px;
     width: 300px;
-    height: 300px;
-    border-radius: 200px;
+    height: fit-content;
+    padding: 5px;
+    box-shadow: 0 5px 30px var(--color-accent-light);
   }
   .profile-content {
     margin-top: 40px;
