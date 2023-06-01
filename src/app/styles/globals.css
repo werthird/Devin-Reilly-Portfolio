@@ -28,10 +28,18 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: fit-content;
   background-color: var(--color-dark);
   color: var(--color-font-glow);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {

@@ -1,11 +1,11 @@
 /* HomePage Styles */
 
 .main-div {
-  padding: 50px 100px;
+  padding: 20px 100px;
   /* border: solid red 2px; */
 }
   .main-h1 {
-    font-size: 120px;
+    font-size: 100px;
     font-weight: 200;
     letter-spacing: 5px;
     color: var(--color-font);

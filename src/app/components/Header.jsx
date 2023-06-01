@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className='header-layout'>
       <div className='header-image-wrapper fade-in'>
-       <Image src='/images/logo-removebg.png' width='200' height='200' alt='Devin Reilly logo' className='logo-image'/>
+       <Image src='/images/logo-removebg.png' width='175' height='175' alt='Devin Reilly logo' className='logo-image'/>
       </div>
       <nav className='navbar'>
         <div className='nav-link fade-in animation-delay-02'>
