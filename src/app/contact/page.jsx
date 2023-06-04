@@ -13,16 +13,16 @@ import './style.css'
 
 export default function Contact() {
 
+  // Store all the data
   const [location, setLocation] = useState('Devin-Reilly-Portfolio')
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
  
-  
+  // Send contact info form
   const onSubmit = async function(e) {
     e.preventDefault();
-    console.log('Data:', name, email, phone, message);
 
     const serviceId = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE;
     const templateId = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE;
@@ -42,7 +42,6 @@ export default function Contact() {
     }, function(error) {
         console.log('FAILED...', error);
     });
-
   };
 
 
@@ -52,17 +51,18 @@ export default function Contact() {
       <div className='underline-div slide-in-right'></div>
 
       <div className='contact-form-div card-flip-in-y'>
+        <h2>Get In Touch</h2>
         <form className='contact-form' onSubmit={onSubmit}>
           <input type='hidden' name='contact_location' />
           <div className='form-div name'>
             <label htmlFor='name'></label>
-            <input type='text' name='name' id='name' autoComplete='given-name' placeholder='Name *' 
+            <input type='text' name='name' id='name' className='input-required' autoComplete='given-name' placeholder='Name *' 
                 onChange={(e) => { setName(e.target.value)}} 
                 required />
           </div>
           <div className='form-div email'>
             <label htmlFor='email'></label>
-            <input type='email' name='email' id='email' autoComplete='email' placeholder='Enter Email *' 
+            <input type='email' name='email' id='email' className='input-required' autoComplete='email' placeholder='Enter Email *' 
                 onChange={(e) => { setEmail(e.target.value)}} 
                 required />
           </div>
@@ -73,7 +73,7 @@ export default function Contact() {
           </div>
           <div className='form-div message'>
             <label htmlFor='message'></label>
-            <textarea name='message' id='message' rows='6' placeholder='Your Message *' 
+            <textarea name='message' id='message' className='input-required' rows='6' placeholder='Your Message *' 
                 onChange={(e) => { setMessage(e.target.value)}} 
                 required></textarea>
           </div>

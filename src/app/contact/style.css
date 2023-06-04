@@ -37,6 +37,10 @@
     color: rgb(0, 0, 0);
     opacity: 0;
   }
+    .contact-form-div h2 {
+      font-size: 30px;
+      font-weight: 500;
+    }
     .contact-form {
       padding: 2px 30px 30px 30px;
       width: 100%;
@@ -95,15 +99,6 @@
           background-color: black;
           animation: 2s ease-in-out buttonPulse infinite;
         }
-
-
-   
-
-
-
-
-
-
 
 
 

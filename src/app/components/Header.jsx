@@ -5,11 +5,14 @@ import './styles/header-style.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 
 export default function Header() {
 
   const [display, setDisplay] = useState(true);
+
+  const pathname = usePathname();
 
   return (
     <div className='header-layout'>
@@ -32,25 +35,25 @@ export default function Header() {
 
         <nav className='navbar'>
           <div className='nav-link fade-in animation-delay-02'>
-            <Link href='./' > 
+            <Link href='./'  id={pathname === '/' ? 'active' : ''}> 
               HOME
             </Link>
           </div>
           
           <div className='nav-link fade-in animation-delay-03'>
-            <Link href='./about'>
+            <Link href='./about'  id={pathname === '/about' ? 'active' : ''}>
               ABOUT
             </Link>
           </div>
 
           <div className='nav-link fade-in animation-delay-04'>
-            <Link href='./projects'>
+            <Link href='./projects'  id={pathname === '/projects' ? 'active' : ''}>
               PROJECTS
             </Link>
           </div>
 
           <div className='nav-link fade-in animation-delay-05'>
-            <Link href='./contact'>
+            <Link href='./contact'  id={pathname === '/contact' ? 'active' : ''}>
               CONTACT
             </Link>
           </div>
@@ -58,6 +61,12 @@ export default function Header() {
           <div className='nav-link fade-in animation-delay-06'>
             <Link href='https://github.com/werthird' target='_blank'>
               GITHUB
+            </Link>
+          </div>
+
+          <div className='nav-link fade-in animation-delay-06'>
+            <Link href='https://docs.google.com/document/d/1KA05RytEvMVzpnrGPDeErW41rxzB8Svt/edit' target='_blank'>
+              RESUME
             </Link>
           </div>
 

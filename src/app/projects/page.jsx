@@ -55,14 +55,15 @@ export default function Projects() {
       <div className='underline-div'></div>
       <div className='projects-list'>
 
-        <div className='project-card'>
+        
+        {/* <div className='project-card'>
           <div className='card-icon-wrapper'>
             <ImFileEmpty className='card-file-icon'/>
             <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
           </div>
           <h3>Project Title 1</h3>
           <Image src='/images/ComingSoon.gif' width={575} height={300} alt='404 image' className='coming-soon-image' />
-          {/* <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p> */}
+          <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
           <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
         </div>
 
@@ -73,7 +74,7 @@ export default function Projects() {
           </div>
           <h3>Project Title 2</h3>
           <Image src='/images/404-gif.gif' width={575} height={50} alt='404 image' className='coming-soon-image' />
-          {/* <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p> */}
+          <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
           <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
         </div>
 
@@ -84,39 +85,39 @@ export default function Projects() {
           </div>
           <h3>Project Title 3</h3>
           <Image src='/images/loading.gif' width={575} height={50} alt='404 image' className='coming-soon-image' />
-          {/* <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p> */}
-          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
-        </div>
-
-        {/* <div className='project-card'>
-          <div className='card-icon-wrapper'>
-            <ImFileEmpty className='card-file-icon'/>
-            <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
-          </div>
-          <h3>Project Title</h3>
-          <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
-          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
-        </div>
-
-        <div className='project-card'>
-          <div className='card-icon-wrapper'>
-            <ImFileEmpty className='card-file-icon'/>
-            <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
-          </div>
-          <h3>Project Title</h3>
-          <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
-          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
-        </div>
-
-        <div className='project-card'>
-          <div className='card-icon-wrapper'>
-            <ImFileEmpty className='card-file-icon'/>
-            <span><BsGithub className='card-github-icon' /><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></span>
-          </div>
-          <h3>Project Title</h3>
           <p className='card-desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iure neque repellendus.</p>
           <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
         </div> */}
+
+        <div className='project-card'>
+          <div className='card-icon-wrapper'>
+            <ImFileEmpty className='card-file-icon'/>
+            <span><Link href='https://github.com/werthird/Yeti-Games' target="_blank"><BsGithub className='card-github-icon' /></Link><Link href='https://chemicalmodel.github.io/Yeti-Games/' target="_blank"><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></Link></span>
+          </div>
+          <h3>Yeti Games</h3>
+          <p className='card-desc'>A comparison site that uses third-party apis to lets you know the minimum and recommended hardware to play a PC game.</p>
+          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
+        </div>
+
+        <div className='project-card'>
+          <div className='card-icon-wrapper'>
+            <ImFileEmpty className='card-file-icon'/>
+            <span><Link href='https://github.com/werthird/ucf-module-4-challenge' target="_blank"><BsGithub className='card-github-icon' /></Link><Link href='https://werthird.github.io/ucf-module-4-challenge/' target="_blank"><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></Link></span>
+          </div>
+          <h3>Code QUiz</h3>
+          <p className='card-desc'>A simple web app that tests what knowledge you have about coding.</p>
+          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
+        </div>
+
+        <div className='project-card'>
+          <div className='card-icon-wrapper'>
+            <ImFileEmpty className='card-file-icon'/>
+            <span><BsGithub className='card-github-icon' /><Link href='https://xd.adobe.com/view/dfa3adb9-eb62-4fb3-98cb-5fa4bafd50c3-8af0/?fullscreen' target='_blank'><BsFillArrowUpRightSquareFill className='card-deployed-site-icon' /></Link></span>
+          </div>
+          <h3>Sea-To-Table</h3>
+          <p className='card-desc'>A simple test of Ui/UX design in Adobe XD.</p>
+          <p className='card-specs-list'><span>Techs</span><span>Techs</span><span>Techs</span><span>Techs</span></p>
+        </div>
 
       </div>
     </div>

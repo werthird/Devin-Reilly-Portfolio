@@ -6,7 +6,7 @@
   height: 200px;
   margin-top: 100px;
   border-top: solid 2px var(--color-accent-glow);
-  box-shadow: 0 0 50px var(--color-accent-glow);
+  box-shadow: 0 0 30px var(--color-accent-glow);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background-color: black;
