@@ -1,10 +1,11 @@
 /* HomePage Styles */
 
 .main-div {
+  margin-top: 30px;
   padding: 20px 5vw;
 }
   .main-h1 {
-    font-size: 10vw;
+    font-size: 12vw;
     font-weight: 200;
     letter-spacing: 5px;
     color: var(--color-font);
@@ -25,18 +26,20 @@
       color: var(--color-accent-glow);
       font-weight: 400;
     }
-  .main-content link {
-    margin: 50px;
+  .main-content a {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 50px;
   }
   .main-button {
     align-self: flex-start;
     font-size: 20px;
-    border: 1px solid white;
+    border: 1px solid var(--color-font);
     border-radius: 3px;
-    margin-top: 50px;
     padding: 10px 15px;
     color: var(--color-font);
     transition: 0.5s ease-in-out;
+    -webkit-box-reflect: below 6px linear-gradient(transparent, #0006);
   }
   .main-button:hover {
     cursor: pointer;
@@ -60,6 +63,15 @@
       color: var(--color-font);
       text-shadow: 0 0 0px white;
       box-shadow: 0 0 0 var(--color-accent);
+    }
+  }
+
+
+
+
+  @media screen and (min-width: 768px) {
+    .main-h1 {
+      font-size: 130px;
     }
   }
   

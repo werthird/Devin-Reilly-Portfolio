@@ -2,7 +2,6 @@
 //                      HOME PAGE
 // =====================================================
 
-
 // REACT/NEXT IMPORTS
 import Image from 'next/image';
 import Link from 'next/link';

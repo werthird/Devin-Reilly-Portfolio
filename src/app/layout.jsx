@@ -1,16 +1,19 @@
 // =====================================================
 //                    MAIN LAYOUT
 // =====================================================
+'use client';
+
 
 // REACT/NEXT IMPORTS
-import Script from 'next/script';
 import { Inter } from 'next/font/google'
+import { usePathname } from 'next/navigation';
 
 // STYLESHEET IMPORTS
 import './styles/globals.css'
 
 // COMPONENT IMPORTS
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Head from 'next/head'
 
 
@@ -29,6 +32,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
+  const pathname = usePathname();
+  const isMainPage = pathname === '/';
+
   return (
     <html lang="en">
       <Head>
@@ -39,6 +45,7 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
+        {isMainPage ? null : <Footer />}
       </body>
     </html>
   )

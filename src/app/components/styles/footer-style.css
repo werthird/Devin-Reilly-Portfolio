@@ -1,0 +1,90 @@
+.footer-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  border-top: solid 2px var(--color-accent-glow);
+  box-shadow: 0 0 50px var(--color-accent-glow);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: black;
+}
+
+.footer-layout a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid var(--color-accent-glow);
+  margin: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--color-font-glow);
+  -webkit-box-reflect: below 4px linear-gradient(transparent, #0004);
+  transition: 0.2s;
+  transition-delay: 0s;
+}
+
+.footer-layout a:hover {
+  transition-delay: 0.1s;
+  color: #000;
+  box-shadow: 0 0 50px var(--color-accent-glow);
+}
+
+.footer-layout a::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-accent-glow);
+  box-shadow: 5px -8px 0 var(--color-accent-glow),
+              5px 8px 0 var(--color-accent-glow);
+  transition: width 0.3s, left 0.3s, height 0.3s,
+    box-shadow 0.1s;
+  transition-delay: 0.3s, 0.1s, 0.1s, 0.1s;
+}
+.footer-layout a:hover::before {
+  width: 60%;
+  height: 100%;
+  left: -2px;
+  box-shadow: 5px 0 0 var(--color-accent-glow),
+              5px 0 0 var(--color-accent-glow);
+  transition-delay: 0.1s, 0.3s, 0.4s, 0.5s;
+}
+.footer-layout a::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-accent-glow);
+  box-shadow: -5px -8px 0 var(--color-accent-glow),
+              -5px 8px 0 var(--color-accent-glow);
+  transition: width 0.3s, right 0.3s, height 0.3s,
+    box-shadow 0.1s;
+  transition-delay: 0.3s, 0.1s, 0.1s, 0.1s;
+}
+.footer-layout a:hover::after {
+  width: 60%;
+  height: 100%;
+  right: -2px;
+  box-shadow: -5px 0 0 var(--color-accent-glow),
+              -5px 0 0 var(--color-accent-glow);
+  transition-delay: 0.1s, 0.3s, 0.4s, 0.5s;
+}
+.footer-layout a span {
+  position: relative;
+  z-index: 100;
+}
+
+
+
+
+
