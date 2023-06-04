@@ -65,7 +65,7 @@ export default function Header() {
           </div>
 
           <div className='nav-link fade-in animation-delay-06'>
-            <Link href='https://docs.google.com/document/d/1KA05RytEvMVzpnrGPDeErW41rxzB8Svt/edit' target='_blank'>
+            <Link href='https://docs.google.com/document/d/1bjss4IZx0KDEVptxSPBYUnUNaBB9HnzL/edit?usp=drive_link&ouid=117058400774936743580&rtpof=true&sd=true' target='_blank'>
               RESUME
             </Link>
           </div>
