@@ -2,9 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 200px;
+  height: fit-content;
   margin-top: 100px;
+  padding-top: 20px;
   border-top: solid 2px var(--color-accent-glow);
   box-shadow: 0 0 30px var(--color-accent-glow);
   border-top-left-radius: 20px;
@@ -17,7 +19,8 @@
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid var(--color-accent-glow);
-  margin: 40px;
+  margin: 30px;
+  margin-top: 0px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
@@ -85,6 +88,14 @@
 }
 
 
+
+@media screen and (min-width: 768px) {
+  .footer-layout {
+    flex-direction: row;
+    height: 150px;
+    padding-top: 0px;
+  }
+}
 
 
 
