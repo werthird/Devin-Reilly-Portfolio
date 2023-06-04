@@ -1,34 +1,110 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<header style="height: 100px; background: linear-gradient(to right, #000046, #1CB5E0);"><h1 style="font-size: 65px; text-align: center"><strong>Devin Reilly Portfolio</strong></h1></header>
 
-## Getting Started
+<br />
 
-First, run the development server:
+[![${license}](https://img.shields.io/badge/license-mit-blue)](#license)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br />
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+> # [Description](#description)
+This is my React portfolio to showcase projects that I have built througout the course of my full-stack coding bootcamp. It was an exercise in building a React app and design for a portfolio.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<br />
 
-## Learn More
+---
+<details>
+<summary style="font-size: 25px">Table of Contents</summary> 
 
-To learn more about Next.js, take a look at the following resources:
+- [Description](#description)
+- [Getting Started](#getting-started)
+  - [Project Status](#project-status)
+  - [Installation](#installation)
+  - [Useage](#useage)
+  - [Demonstration](#demonstration)
+  - [Contributing Guidelines](#contributing)
+  - [Test Instructions](#test) 
+  - [License](#license)
+- [Credits](#credits)
+  - [Contributors](#contributors)
+  - [Acknowledgements](#acknowledgements)
+- [Questions](#questions)
+</details>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br />
+<br />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+> # [Getting Started](#getting-started)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<br />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## [Project Status](#project-status)
+    MVP - Minimal Viable Product
+
+<br />
+
+Checkout the deployed site here <a href='https://www.devinreilly.com/' targer='_blank'>here.</a>
+
+Or to get a better look at the code, please visit our GitHub repository <a href="https://github.com/werthird/Devin-Reilly-Portfolio">here.</a>
+
+
+<br />
+
+## [Installation](#installation)
+No installation required. 
+
+
+<br />
+
+## [Useage](#useage)
+Please, just take some time to look around. I fou have any questions, head over to my contact page and shoot me a line.
+
+
+<br />
+
+## [Contributing Guidelines](#contributing)
+No contributing guidelines. For any suggestions or comments, please see [Questions](#questions) section below.
+
+<br />
+
+## [Test Instructions](#test)
+No testing instructions at this time.
+
+<br />
+
+## [License](#license)
+Distributed under the MIT License. See LICENSE.txt for more information.
+
+<br />
+<br />
+
+---
+
+> # [Credits](#credits)
+
+<br />
+
+## [Contributors](#contributors)
+
+Designed and built by Devin Reilly
+
+<br />
+
+## [Acknowledgements](#acknowledgements)
+- [The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) - README Template 
+- UCF Instructor **John Dinsmore**, and TA's, **Kristofer Marshall** and **Rider Cogswell**
+- Students of UCF Coding Boot Camp, in class, on Slack and on Discord
+- Research articles from Google Search, ChatGPT, MDN Docs, W3Schools
+
+<br />
+<br />
+
+---
+
+> # [Questions](#questions)
+
+Here is a link to our <a href="https://github.com/werthird">GitHub profile page!</a>
+
+Or send us an <a href="mailto: werthird@aol.com?subject=Tech Blog Feedback">Email!</a>
