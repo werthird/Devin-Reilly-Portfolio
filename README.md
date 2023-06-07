@@ -8,12 +8,12 @@
 <br />
 
 > # [Description](#description)
-This is my React portfolio to showcase projects that I have built througout the course of my full-stack coding bootcamp. It was an exercise in building a React app and design for a portfolio.
+This is my React portfolio to showcase projects that I have built througout the course of my full-stack coding bootcamp. It was an exercise in building a React app. The requirements did not include any design parameters except to have a fluid UI and ease of movement. This was a personal expercise for me in creating a well designed and functional project.
 
 <br />
 
 ---
-<details>
+
 <summary style="font-size: 25px">Table of Contents</summary> 
 
 - [Description](#description)
@@ -29,7 +29,7 @@ This is my React portfolio to showcase projects that I have built througout the 
   - [Contributors](#contributors)
   - [Acknowledgements](#acknowledgements)
 - [Questions](#questions)
-</details>
+
 
 <br />
 <br />
@@ -45,9 +45,9 @@ This is my React portfolio to showcase projects that I have built througout the 
 
 <br />
 
-Checkout the deployed site here <a href='https://www.devinreilly.com/' targer='_blank'>here.</a>
+Checkout the deployed site here <a href='https://www.devinreilly.com/' target='_blank'>here.</a>
 
-Or to get a better look at the code, please visit our GitHub repository <a href="https://github.com/werthird/Devin-Reilly-Portfolio">here.</a>
+Or to get a better look at the code, please visit our GitHub repository <a href="https://github.com/werthird/Devin-Reilly-Portfolio" target='_blank'>here.</a>
 
 
 <br />
@@ -59,9 +59,17 @@ No installation required.
 <br />
 
 ## [Useage](#useage)
-Please, just take some time to look around. I fou have any questions, head over to my contact page and shoot me a line.
+The usage of this site hopefully very intuative. 
+- On first load, you will be presented with a navbar to navigate the site, and a button to view projects.
+- On the about me page is a simple picture and biography, with also a list of key-focus points and skills.
+- Projects page contains the top three projects, as well as a list of other projects below. The user is able to view the GitHub repo of each site or the deployed site.
+- The contact me page contains a form to submit an email to me.
+- There is a github link in the navbar that takes the user to my github profile
+- There is also a resume link in the navbar that takes the user to a google-docs of my resume if they want to download it.
 
-
+<br />
+<img style="text-align: center; border: solid 1px white; width:75%;height:75%" src="./public/images/portfolio-screenshot.png" alt="Screenshot of portfolio hompage"/>
+<br />
 <br />
 
 ## [Contributing Guidelines](#contributing)
