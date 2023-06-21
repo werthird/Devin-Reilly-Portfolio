@@ -23,11 +23,6 @@ const inter = Inter({
   subsets: ['latin'] 
 })
 
-// Metadata
-export const metadata = {
-  title: 'Devin Reilly Portfolio',
-}
-
 
 
 export default function RootLayout({ children }) {
@@ -39,6 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Devin Reilly Portfolio</title>
       </Head>
       <body className={inter.className} id='styled-scrollbars'>
         <Header />
