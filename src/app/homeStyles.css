@@ -70,8 +70,15 @@
 
 
   @media screen and (min-width: 768px) {
+    .main-div {
+      margin-top: 10px;
+      padding: 10px 5vw;
+    }
     .main-h1 {
-      font-size: 130px;
+      font-size: 110px;
+    }
+    .main-content a {
+      margin-top: 20px;
     }
   }
   

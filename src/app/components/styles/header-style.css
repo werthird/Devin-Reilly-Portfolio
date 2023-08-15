@@ -6,7 +6,7 @@
   justify-content: space-between;
   height: fit-content;
   width: 100%;
-  padding: 0 20px 0 5px;
+  padding: 0 0 0 5px;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(6px);
   box-shadow: 0 10px 30px black;
@@ -14,7 +14,7 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  /* border: solid red 2px; */
+  /* border: solid red 1px; */
 }
   #active {
     color: var(--color-font-glow);
@@ -23,9 +23,23 @@
     border-radius: 2px;
   }
   .header-image-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     opacity: 0;
-    width: 100px;
-    /* border: solid red 2px; */
+    width: 200px;
+    /* border: solid red 1px; */
+  }
+  .logo-image{
+    padding: 5px;
+  }
+  .logo-image-icon{
+    width: 50px;
+    height: 50px;
+  }
+  .logo-image-text{
+    width: 120px;
+    height: 27px;
   }
 
   .navbar-container {
@@ -47,24 +61,19 @@
       margin-right: 0px;
       padding: 10px;
       row-gap: 6px;
+      background-color: rgba(0, 0, 0, 0);
       /* border: solid red 2px; */
     }
-      .navbar-exit div {
-        width: 40px;
-        height: 4px;
-        border-radius: 4px;
-        background-color: white;
+      .close-icon{
+        height: 30px;
+        width: 30px;
+        color: var(--color-accent);
       }
-        .exit-div-1 {
-          position: relative;
-          top: 5px;
-          transform: rotate(45deg);
-        }
-        .exit-div-2 {
-          position: relative;
-          top: -5px;
-          transform: rotate(-45deg);
-        }
+      .menu-icon {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+      }
 
   .navbar {
     display: flex;
@@ -89,19 +98,7 @@
     }
 
 
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    row-gap: 6px;
-    padding: 10px;
-  }
-    .menu-toggle div {
-      width: 40px;
-      height: 4px;
-      background-color: var(--color-font);
-      border-radius: 4px;
-    }
+  
 
 
 @media screen and (min-width: 768px) {
@@ -110,7 +107,15 @@
     padding: 5px 40px 0 40px;
   }
   .header-image-wrapper {
-    width: fit-content;
+    flex-direction: column;
+  }
+  .logo-image-icon{
+    width: 70px;
+    height: 70px;
+  }
+  .logo-image-text{
+    width: 200px;
+    height: 30px;
   }
   .nav-link {
     -webkit-box-reflect: below 0px linear-gradient(transparent, #0004);
@@ -125,12 +130,6 @@
     flex-direction: row;
     align-items: center;
     margin: 0;
-  }
-  .navbar-exit {
-    display: none;
-  }
-  .menu-toggle {
-    display: none;
   }
 }
 
