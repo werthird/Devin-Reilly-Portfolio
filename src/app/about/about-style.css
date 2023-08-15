@@ -30,6 +30,8 @@
   align-items: center;
   min-height: 500px;
   margin-top: 50px;
+  padding: 10px;
+  /* border: solid red 1px; */
 }
   .profile-img {
     display: flex;
@@ -73,7 +75,6 @@
   font-size: 30px;
   font-weight: 500;
 }
-
 .key-focus-div {
   display: flex;
   justify-content: center;
@@ -97,7 +98,33 @@
     animation-delay: 1s;
     opacity: 0;
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-accent);
   }
+  .image-wrapper:hover {
+    scale: 120%;
+    rotate: 360deg;
+    transition-duration: 1s;
+  }
+    .usability-icon{
+      height: 90px;
+      width: 90px;
+      margin: auto;
+      color: black;
+    }
+    .access-icon{
+      height: 90px;
+      width: 90px;
+      margin: auto;
+      color: black;
+    }
+    .preform-icon{
+      height: 85px;
+      width: 85px;
+      margin: auto;
+      color: black;
+    }
   .focus-div h3 {
     margin: 10px;
     margin-top: 10px;
@@ -112,7 +139,7 @@
   }
 
 
-/* ========== PROFILE DIV ========== */
+/* ========== SKILL DIV ========== */
 
 .skills-div {
   display: flex;
@@ -124,11 +151,11 @@
   background-color: var(--color-accent);
   border-radius: 7px;
   box-shadow: 0 5px 20px var(--color-accent);
-  color: black;
+  color: white;
   opacity: 0;
 }
 .skills-div .underline-div {
-  border-top: 4px solid black;
+  border-top: 4px solid white;
 }
   .skills-div h2 {
     margin: 0;

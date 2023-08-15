@@ -1,81 +1,74 @@
-// =====================================================
-//                      ABOUT PAGE
-// =====================================================
-
-
 // IMPORTS
-import './aboutStyle.css';
+import './about-style.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
 // ICONS
-import { IoLogoCss3 } from 'react-icons/io';
+import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from 'react-icons/io';
 import { AiFillHtml5 } from 'react-icons/ai';
-import { IoLogoJavascript } from 'react-icons/io';
-import { IoLogoNodejs } from 'react-icons/io';
-import { SiReact } from 'react-icons/si';
-import { SiMongodb } from 'react-icons/si';
+import { SiReact, SiMongodb, SiAdobeindesign } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
-import { SiAdobeindesign } from 'react-icons/si';
+import { BiSolidLike, BiAccessibility } from 'react-icons/bi';
+import { FaRunning } from 'react-icons/fa';
 
-
-
-
-
-import { BsFillArrowUpRightSquareFill } from 'react-icons/bs';
-import lightbulbPic from '../../../public/images/light-bulb-icon-green.png';
+import resIcon from '../../../public/images/responsivness-icon.png';
 
 
 
 export default function About() {
   return (
     <div className='about-div'>
+
+
+      {/* PROFILE */}
       <h1 className='slide-in-left'>About Me</h1>
       <div className='underline-div slide-in-right'></div>
-
       <div className='profile'>
         <div className='profile-img flip-in-y'><Image src='/images/profile-image.jpg' fill alt='Profile image'/></div>
         <div className='profile-content'>
-          <p>Hello There! I am glad you have made it to my portfolio page. Please have a look around, checkout some projects, drop me a line. Whether your here to see what skill-set I have, or to gather some insperation, I'm glad your here.</p>
+          <p>Hello There! I am glad you have made it to my portfolio page. Please have a look around, checkout some projects, drop me a line. Whether you came by to see what skill-sets are mine to share, or to gather some good-old insperation, I'm glad your here!</p>
           <br />
           <p>Below are some key focus points that guide all my development decisions and a list of my top skill-set. If you wish to get in contact with me or have any question, you can send me a message <Link href='./contact' className='contact-me-link'>here!</Link></p>
         </div>
       </div>
 
 
+      {/* FOCUS POINTS */}
       <h2 className='slide-in-left'>Key Focus Points</h2>
       <div className='underline-div slide-in-right'></div>
       <div className='key-focus-div'>
         <div className='focus-div'>
           <div className='image-wrapper flip-in-y image-1'>
-            <Image src={lightbulbPic} width='100' alt='a lightbulb icon' className='key-focus-icon' />
+            <BiSolidLike className='key-focus-icon usability-icon' />
           </div>
           <h3>Usability</h3>
           <p>Easy navigation and intuitive interface for seamless interaction.</p>
         </div>
         <div className='focus-div'>
           <div className='image-wrapper flip-in-y image-2'>
-            <Image src={lightbulbPic} width='100' alt='a lightbulb icon'/>
+            <Image src={resIcon} width='100' alt='a responsive icon'/>
           </div>
           <h3>Responsivness</h3>
           <p>Optimal display and function across different devices.</p>
         </div>
         <div className='focus-div'>
           <div className='image-wrapper flip-in-y image-3'>
-            <Image src={lightbulbPic} width='100' alt='a lightbulb icon'/>
+            <BiAccessibility className='key-focus-icon access-icon' />
           </div>
           <h3>Accessibility</h3>
           <p>Inclusive design for all users, regardless of abilities.</p>
         </div>
         <div className='focus-div'>
           <div className='image-wrapper flip-in-y image-4'>
-            <Image src={lightbulbPic} width='100' alt='a lightbulb icon'/>
+            <FaRunning className='key-focus-icon preform-icon' />
           </div>
           <h3>Performance</h3>
           <p>Fast loading and efficient resource utilization for smooth experience.</p>
         </div>
       </div>
 
+
+      {/* SKILLS */}
       <div className='skills-div flip-in-y image-10'>
         <h2>Key Skill Set</h2>
         <div className='underline-div'></div>
