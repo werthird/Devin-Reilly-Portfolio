@@ -6,7 +6,7 @@ import './styles/header-style.css'
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import BurgerMenu from './BurgerMenu';
-import NavBar from './NavBar';
+import NavBar from './NavBar.jsx';
 
 const Header = () => {
 
