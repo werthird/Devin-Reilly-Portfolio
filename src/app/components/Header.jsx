@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react';
 import BurgerMenu from './BurgerMenu';
 import NavBar from './NavBar';
 
-export default function Header() {
+const Header = () => {
 
   const [width, setWidth] = useState(null);
   const breakpoint = 1200;
@@ -54,3 +54,5 @@ export default function Header() {
     </div>
   );
 };
+
+export default Header;
