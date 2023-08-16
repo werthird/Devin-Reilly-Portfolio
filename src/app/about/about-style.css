@@ -31,19 +31,40 @@
   min-height: 500px;
   margin-top: 50px;
   padding: 10px;
+  perspective: 1000px;
   /* border: solid red 1px; */
 }
-  .profile-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid var(--color-accent-light) 5px;
+
+  .image-card {
+    transform-style: preserve-3d;
+    border: solid var(--color-accent-light) 2px;
     border-radius: 7px;
-    width: 250px;
-    height: 344px;
-    padding: 5px;
     box-shadow: 0 5px 30px var(--color-accent-light);
+    /* border: solid red 1px; */
+    
   }
+  .image-card:hover {
+    animation: spin 5s infinite linear;
+  }
+    .front,
+    .back {
+      backface-visibility: hidden;
+      width: 250px;
+      height: 344px;
+      padding: 5px;
+    }
+    .back {
+      position: absolute;
+      top: 0px;
+      transform: rotateY(180deg);
+      background-color: black;
+    }
+    @keyframes spin {
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
   .profile-content {
     margin-top: 40px;
     text-align: center;
@@ -67,6 +88,8 @@
       border-radius: 3px;
       color: black;
     }
+
+
 
 
 /* ========== FOCUS DIV ========== */
@@ -139,48 +162,104 @@
   }
 
 
-/* ========== SKILL DIV ========== */
 
-.skills-div {
+
+/* ========== EXPERTISE DIV ========== */
+
+.expertise-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
-  width: fit-content;
   padding: 20px;
-  background-color: var(--color-accent);
-  border-radius: 7px;
-  box-shadow: 0 5px 20px var(--color-accent);
+  width: 100%;
+  /* border-radius: 7px; */
+  /* box-shadow: 0 5px 20px var(--color-accent); */
   color: white;
-  opacity: 0;
 }
-.skills-div .underline-div {
+.expertise-div .underline-div {
   border-top: 4px solid white;
 }
-  .skills-div h2 {
+  .expertise-div h2 {
     margin: 0;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 500;
   }
-  .skills-list {
-    margin-top: 10px;
-    width: 75%;
-    /* border: solid red 2px; */
-  }
-  .skill {
+  .expertise-table{
+    width: 100%;
+    min-height: 350px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border: solid red 2px; */
-    min-width: 50%;
-    margin: 5px 0;
-    font-weight: 500;
+    flex-wrap: wrap;
+    /* border: red solid 1px; */
   }
-    .skills span {
-      margin: auto;
-      text-align: center;
+  .expertise-cell {
+    margin: auto;
+    margin-top: 20px;
+    min-height: 350px;
+    width: 33%;
+    min-width: 300px;
+    padding: 30px;
+    border: solid white 1px;
+  }
+    .expertise-header{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      /* border: solid red 1px; */
     }
+      .expertise-header h3{
+        margin-left: 20px;
+        padding: 0 5px;
+        font-weight: 700;
+      }
+      .expertise-icon{
+        height: 80px;
+        width: 80px;
+      }
+    .expertise-list{
+      display: flex;
+      margin-top: 5px;
+      /* border: solid red 1px; */
+      height: 200px;
+    }
+      .expertise-list-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        font-size: 14px;
+        font-family: monospace;
+        /* border: solid red 1px; */
+        color: grey;
+      }
+        .expertise-list-left-border{
+          height: 160px;
+          border-left: solid grey 1px;
+        }
+      .expertise-list-right{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: solid red 1px; */
+      }
+        .expertise-list-right p{
+          display: flex;
+          margin: 3px 0;
+        }
+        .expertise-list-icon{
+          height: 20px;
+          width: 20px;
+          margin: 0 10px;
+        }
+  
 
+@media screen and (min-width: 1920px) {
+  
+};
 
 
 
