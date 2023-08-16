@@ -6,7 +6,7 @@ import './styles/header-style.css'
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import BurgerMenu from './BurgerMenu';
-import NavBar from 'NavBar';
+import Navbar from './Navbar';
 
 const Header = () => {
 
@@ -46,12 +46,10 @@ const Header = () => {
           placeholder='blur'
         />
       </div>
-      
-      <BurgerMenu />
-      <NavBar />
+
 
       {/* MENU */}
-      {/* {width < breakpoint ? <BurgerMenu /> : <NavBar />} */}
+      {width < breakpoint ? <BurgerMenu /> : <Navbar />}
 
     </div>
   );
