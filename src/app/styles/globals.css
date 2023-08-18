@@ -90,11 +90,11 @@ main {
   transform: translateX(-100%);
 } */
 
-.show {
+/* .show {
   opacity: 1;
   filter: blur(0);
   transform:  translateX(0);
-}
+} */
 
 
 
