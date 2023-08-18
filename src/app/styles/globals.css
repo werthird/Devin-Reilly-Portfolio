@@ -83,23 +83,17 @@ main {
 
 
 /* REVIEW IN VIEWPORT  */
-.hide {
+/* .hide {
   opacity: 0;
   transition: all 2s;
   filter: blur(5px);
-}
-.hide-left {
-  /* transform: translateX(-100%); */
-  transform: translate3d(-100%, 0, 0);
-}
-.hide-right {
-  transform: translate3d(100%, 0, 0);
-}
+  transform: translateX(-100%);
+} */
 
 .show {
   opacity: 1;
   filter: blur(0);
-  transform:  translate3d(0, 0, 0);
+  transform:  translateX(0);
 }
 
 

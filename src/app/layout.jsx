@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
           position='top-center'
         />
 
-        <Script type='text/javascript' src='./js/script.js' />
+        {/* <Script type='text/javascript' src='./js/script.js' /> */}
       </body>
     </html>
   )
