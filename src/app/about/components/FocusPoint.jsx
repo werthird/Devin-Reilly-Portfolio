@@ -7,7 +7,7 @@ import resIcon from '../../../../public/images/responsivness-icon-white.png';
 
 const FocusPoint = () => {
   return (
-    <div className='focuspoint-div'>
+    <div className='hide focuspoint-div'>
       <h2 className='focuspoint-title'>Key Focus Points</h2>
       <div className='underline-div'></div>
 

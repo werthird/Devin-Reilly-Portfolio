@@ -24,10 +24,11 @@ export default function Projects() {
       {/* <Image src={lightbulbPic} width='150' alt='a lightbulb icon'/> */}
       
       <div className='featured-projects-div'>
-        <div className='featured-project'>
+
+        <div className='hide hide-left featured-project'>
           <div className='featured-image'>
             <Link href='https://www.thisfabfamily.com/' target="_blank" >
-              <Image src={proj1} width={575} height={0} alt='This Fabulous family webpage screenshot' />
+              <Image src={proj1} width={575} height={0} alt='This Fabulous family webpage screenshot' className='featured-img' />
             </Link>
           </div>
           <div className='featured-content flex-end-items'>
@@ -47,7 +48,12 @@ export default function Projects() {
         </div>
 
 
-        <div className='featured-project'>
+        <div className='hide hide-left featured-project'>
+          <div className='featured-image-hide-top featured-image '>
+            <Link href='https://tech-blog-devin.herokuapp.com/' target="_blank">
+              <Image src={proj2} width={575} height={0} alt='Tech Blog Screenshot' className='featured-img' />
+            </Link>
+          </div>
           <div className='featured-content'>
             <p className='featured-content-label'>Featured Project</p>
             <h3 className='featured-content-title'>Tech Blog</h3>
@@ -61,18 +67,18 @@ export default function Projects() {
                 <BsFillArrowUpRightSquareFill className='deployed-site-icon' />
               </Link></p>
           </div>
-          <div className='featured-image'>
+          <div className='featured-image-hide-bottom featured-image'>
             <Link href='https://tech-blog-devin.herokuapp.com/' target="_blank">
-              <Image src={proj2} width={575} height={0} alt='Tech Blog Screenshot' />
+              <Image src={proj2} width={575} height={0} alt='Tech Blog Screenshot' className='featured-img' />
             </Link>
           </div>
         </div>
 
 
-        <div className='featured-project'>
+        <div className='hide hide-left featured-project'>
           <div className='featured-image'>
             <Link href='https://werthird.github.io/Weather-Dashboard---Module-06/' target="_blank">
-              <Image src={proj3} width={575} height={0} alt='404 image' />
+              <Image src={proj3} width={575} height={0} alt='Weather App screenshot' className='featured-img' />
             </Link>
           </div>
           <div className='featured-content flex-end-items'>
@@ -89,6 +95,7 @@ export default function Projects() {
               </Link></p>
           </div>
         </div>
+
       </div>
 
       <h2 className='project-list-title'>Other Noteworthy Projects</h2>

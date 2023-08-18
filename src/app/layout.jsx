@@ -15,6 +15,7 @@ import './styles/globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Head from 'next/head'
+import Script from 'next/script';
 
 
 // Font
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         {isMainPage ? null : <Footer />}
+        <Script type='text/javascript' src='./js/script.js' />
       </body>
     </html>
   )

@@ -10,7 +10,7 @@ import { BsDatabaseCheck } from 'react-icons/bs';
 
 const Expertise = () => {
   return (
-    <div className='expertise-div'>
+    <div className='hide expertise-div'>
       <h2 className='expertise-title'>My Expertise</h2>
       <div className='underline-div'></div>
 
