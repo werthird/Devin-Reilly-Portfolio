@@ -7,6 +7,7 @@
 // REACT/NEXT IMPORTS
 import { Inter } from 'next/font/google'
 import { usePathname } from 'next/navigation';
+import { Toaster } from 'react-hot-toast';
 
 // STYLESHEET IMPORTS
 import './styles/globals.css'
@@ -43,7 +44,13 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
+
         {isMainPage ? null : <Footer />}
+
+        <Toaster 
+          position='top-center'
+        />
+
         <Script type='text/javascript' src='./js/script.js' />
       </body>
     </html>

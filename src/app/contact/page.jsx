@@ -4,7 +4,7 @@
 'use client'
 
 import emailjs from '@emailjs/browser';
-
+import toast from 'react-hot-toast';
 
 import { useState } from 'react';
 import './style.css'
@@ -19,6 +19,8 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+
+  
  
   // Send contact info form
   const onSubmit = async function(e) {
@@ -39,6 +41,14 @@ export default function Contact() {
     emailjs.send(serviceId, templateId, templateParams, publicKey)
     .then(function() {
         console.log('SUCCESS!');
+        toast.success('Contact Info Sent!', {
+          style: {
+            fontSize: '30px',
+            padding: '20px',
+            fontWeight: 'bold'
+          }
+        });
+        e.target.reset();
     }, function(error) {
         console.log('FAILED...', error);
     });
