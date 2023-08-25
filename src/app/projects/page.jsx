@@ -13,6 +13,7 @@ import { ImFileEmpty } from 'react-icons/im';
 import proj1 from '../../../public/images/this-fabulous-family-screenshot.png';
 import proj2 from '../../../public/images/tech-blog.png';
 import proj3 from '../../../public/images/weather-app.jpg';
+import proj4 from '../../../public/images/le-apero-screenshot.png';
 
 
 export default function Projects() {
@@ -25,6 +26,36 @@ export default function Projects() {
       
       <div className='featured-projects-div'>
 
+
+        {/* LE APERO RESTAURANT */}
+        <div className='hide hide-left featured-project'>
+          <div className='featured-image-hide-top featured-image '>
+            <Link href='https://www.le-apero.com/' target="_blank">
+              <Image src={proj4} width={575} height={0} alt='Le Apero Restaurant Screenshot' className='featured-img' />
+            </Link>
+          </div>
+          <div className='featured-content'>
+            <p className='featured-content-label'>Featured Project</p>
+            <h3 className='featured-content-title'>Le Apero Restaurant</h3>
+            <div className='featured-content-desc'><p>Le Apero is a French Cuisine restaurant specializing in a quiet and ambience. This project included the design and build from start to completion.</p></div>
+            <p className='featured-content-specs'><span>React</span><span>Next.js</span><span>JavaScript</span><span>CSS</span><span>Tailwind</span></p>
+            <p className='featured-content-link'>
+              <Link href='https://github.com/werthird/le-apero-restaurant' target="_blank">
+                <BsGithub className='github-icon' />
+              </Link>
+              <Link href='https://www.le-apero.com/' target="_blank">
+                <BsFillArrowUpRightSquareFill className='deployed-site-icon' />
+              </Link></p>
+          </div>
+          <div className='featured-image-hide-bottom featured-image'>
+            <Link href='https://www.le-apero.com/' target="_blank">
+              <Image src={proj4} width={575} height={0} alt='Tech Blog Screenshot' className='featured-img' />
+            </Link>
+          </div>
+        </div>
+
+
+        {/* THIS FAB FAMILY */}
         <div className='hide hide-left featured-project'>
           <div className='featured-image'>
             <Link href='https://www.thisfabfamily.com/' target="_blank" >
@@ -48,6 +79,7 @@ export default function Projects() {
         </div>
 
 
+        {/* TECH BLOG */}
         <div className='hide hide-left featured-project'>
           <div className='featured-image-hide-top featured-image '>
             <Link href='https://tech-blog-devin.herokuapp.com/' target="_blank">
@@ -75,6 +107,7 @@ export default function Projects() {
         </div>
 
 
+        {/* WEATHER API */}
         <div className='hide hide-left featured-project'>
           <div className='featured-image'>
             <Link href='https://werthird.github.io/Weather-Dashboard---Module-06/' target="_blank">
